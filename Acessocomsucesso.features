@@ -1,0 +1,11 @@
+# language: pt
+
+Funcionalidade: Acesso com sucesso
+    os usuários fazem login com sucesso preenchendo os campos 
+	 
+	cenário: Informando Login e senha
+	  Dado que eu esteja autenticado como administrador 
+		 E que eu tenha acessado a url "https://the-internet.herokuapp.com/login"
+		 E informando Login e Senha
+		 E clicar em "Login"
+	Então verei a mensagem "You logged into a secure area!" como sucesso da operação	  
